@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/CSS" href="./resources/style.css">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <script src="./resources/main.js" defer></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <main>
+
+    <!--balance bar-->
+    <section class = 'balance'>
+      <div class = 'container'>
+        <div class = 'my-balance'>
+          <p>My balance</p>
+          <h3 id="balance">$921.48</h3>
+        </div>
+        <div class="logo">
+          <img src="./images/logo.svg">
+        </div> 
+      </div>
+    </section>
+
+    <!--graph section-->
+    <section class = 'graph-section'>
+      <h1>Spending - Last 7 days</h1>
+      <div class = 'graph'>
+        <div class = 'day'>
+          <div class = "bar-holder">
+            <div class = 'spend hidden' id="spendMon">$10.00</div>  
+            <div class = 'bar' id="mon"></div>
+          </div>
+          <p>mon</p>
+        </div>
+        <div class = 'day'>
+          <div class = "bar-holder">
+            <div class = 'spend hidden' id="spendTue">$10.00</div>
+            <div class = 'bar' id="tue"></div>
+          </div>
+          <p>tue</p>
+        </div>
+        <div class = 'day'>
+          <div class = "bar-holder">
+            <div class = 'spend hidden' id="spendWed">$10.00</div>
+            <div class = 'bar' id="wed"></div>            
+          </div>
+          <p>wed</p>
+        </div>
+        <div class = 'day'>
+          <div class = "bar-holder">
+            <div class = 'spend hidden' id="spendThu">$10.00</div>
+            <div class = 'bar' id="thu"></div>            
+          </div>
+          <p>thu</p>
+        </div>
+        <div class = 'day'>
+          <div class = "bar-holder">
+            <div class = 'spend hidden' id="spendFri">$10.00</div>
+            <div class = 'bar' id="fri"></div>            
+          </div>
+          <p>fri</p>
+        </div>
+        <div class = 'day'>
+          <div class = "bar-holder">
+            <div class = 'spend hidden' id="spendSat">$10.00</div>
+            <div class = 'bar' id="sat"></div>           
+          </div>
+          <p>sat</p>
+        </div>
+        <div class = 'day'>
+          <div class = "bar-holder">
+            <div class = 'spend hidden' id="spendSun">$10.00</div>
+            <div class = 'bar' id="sun"></div>           
+          </div>
+          <p>sun</p>
+        </div>
+      </div>
+      <hr>
+      <div class = 'container bottom'>
+        <div class = 'monthly-spend'>
+          <p>Total this month</p>
+          <h2 id="monthBalance">$478.33</h2>
+        </div>
+        <div class = 'last-month'>
+          <h4>+2.4%</h4>
+          <p>from last month</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
